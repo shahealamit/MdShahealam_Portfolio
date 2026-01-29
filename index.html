@@ -115,6 +115,7 @@
       <a href="/#about" class="hover:text-teal-400 transition-colors">About</a>
       <a href="/#skills" class="hover:text-teal-400 transition-colors">Skills</a>
       <a href="/#resume" class="hover:text-teal-400 transition-colors">Journey</a>
+       <a href="/#services" class="hover:text-teal-400 transition-colors"> Services</a>
       <a href="/#projects" class="hover:text-teal-400 transition-colors">Projects</a>
       <a href="/#contact"
         class="px-5 py-2 border border-teal-500 text-teal-400 rounded-full
@@ -136,7 +137,10 @@
       <a href="/#home" class="block hover:text-teal-400">Home</a>
       <a href="/#about" class="block hover:text-teal-400">About</a>
       <a href="/#resume" class="block hover:text-teal-400">Journey</a>
+      <a href="/#services" class="block hover:text-teal-400">Services</a>
       <a href="/#projects" class="block hover:text-teal-400">Projects</a>
+      
+
       <a href="/#contact" class="block text-teal-400 font-bold">Contact Me</a>
     </div>
   </div>
@@ -555,7 +559,178 @@
         </div>
     </section>
 
+<!-- ================= SERVICES ================= -->
+<section id="services" class="py-24 relative bg-slate-950 overflow-hidden">
 
+  <!-- Background Glow -->
+  <div class="absolute top-0 left-1/2 -translate-x-1/2 w-full h-full pointer-events-none">
+    <div class="absolute top-[-10%] left-[-10%] w-[40%] h-[40%] bg-teal-500/10 blur-[120px] rounded-full"></div>
+    <div class="absolute bottom-[-10%] right-[-10%] w-[40%] h-[40%] bg-purple-500/10 blur-[120px] rounded-full"></div>
+  </div>
+
+  <div class="max-w-6xl mx-auto px-6 relative z-10">
+
+    <!-- Heading -->
+    <div class="text-center mb-20">
+      <h2 class="text-4xl md:text-6xl font-extrabold text-white mb-6 tracking-tight">
+        What I
+        <span class="bg-gradient-to-r from-teal-400 to-blue-500 bg-clip-text text-transparent">
+          Offer
+        </span>
+      </h2>
+
+      <p class="text-slate-400 text-lg max-w-2xl mx-auto leading-relaxed">
+        Production-ready DevOps services focused on automation, security,
+        scalability, and faster releases.
+      </p>
+    </div>
+
+    <!-- Services Grid -->
+    <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+
+      <!-- CI/CD -->
+      <div class="group relative bg-slate-900/40 backdrop-blur-md border border-slate-800/60 rounded-3xl p-8
+        hover:border-teal-500/50 transition-all duration-300 hover:-translate-y-2
+        hover:shadow-[0_20px_40px_-15px_rgba(20,184,166,0.3)]">
+
+        <div class="w-12 h-12 bg-teal-500/10 rounded-2xl flex items-center justify-center mb-6
+          group-hover:scale-110 transition-transform">
+          <svg class="w-6 h-6 text-teal-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="M13 10V3L4 14h7v7l9-11h-7z"/>
+          </svg>
+        </div>
+
+        <h3 class="text-xl font-bold text-white mb-4">CI/CD Pipelines</h3>
+        <p class="text-slate-400 text-sm mb-6">
+          Automated build and test pipelines that help teams release faster with reliability.
+        </p>
+
+        <ul class="text-[13px] text-slate-300 space-y-3 mb-8">
+          <li class="flex items-center gap-2">
+            <span class="w-1.5 h-1.5 rounded-full bg-teal-400"></span>
+            Jenkins & GitHub Actions
+          </li>
+          <li class="flex items-center gap-2">
+            <span class="w-1.5 h-1.5 rounded-full bg-teal-400"></span>
+            Testing & Validation
+          </li>
+        </ul>
+
+        <a href="/jenkins-ci-cd.html"
+          class="inline-flex items-center text-teal-400 font-bold text-xs tracking-widest uppercase">
+          Explore CI/CD →
+        </a>
+      </div>
+
+      <!-- AWS -->
+      <div class="group relative bg-slate-900/40 backdrop-blur-md border border-slate-800/60 rounded-3xl p-8
+        hover:border-blue-500/50 transition-all duration-300 hover:-translate-y-2
+        hover:shadow-[0_20px_40px_-15px_rgba(59,130,246,0.3)]">
+
+        <div class="w-12 h-12 bg-blue-500/10 rounded-2xl flex items-center justify-center mb-6
+          group-hover:scale-110 transition-transform">
+          <svg class="w-6 h-6 text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="M3 15a4 4 0 004 4h9a5 5 0 10-.1-9.999A5.002 5.002 0 103.22 11.1 4.001 4.001 0 003 15z"/>
+          </svg>
+        </div>
+
+        <h3 class="text-xl font-bold text-white mb-4">AWS Cloud</h3>
+        <p class="text-slate-400 text-sm mb-6">
+          Scalable and cost-optimized AWS infrastructure for production workloads.
+        </p>
+
+        <ul class="text-[13px] text-slate-300 space-y-3 mb-8">
+          <li class="flex items-center gap-2">
+            <span class="w-1.5 h-1.5 rounded-full bg-blue-400"></span>
+            EC2, S3, RDS & IAM
+          </li>
+          <li class="flex items-center gap-2">
+            <span class="w-1.5 h-1.5 rounded-full bg-blue-400"></span>
+            VPC & Network Security
+          </li>
+        </ul>
+
+        <a href="/aws-devops-engineer.html"
+          class="inline-flex items-center text-blue-400 font-bold text-xs tracking-widest uppercase">
+          Explore AWS →
+        </a>
+      </div>
+
+      <!-- Docker -->
+      <div class="group relative bg-slate-900/40 backdrop-blur-md border border-slate-800/60 rounded-3xl p-8
+        hover:border-purple-500/50 transition-all duration-300 hover:-translate-y-2
+        hover:shadow-[0_20px_40px_-15px_rgba(168,85,247,0.3)]">
+
+        <div class="w-12 h-12 bg-purple-500/10 rounded-2xl flex items-center justify-center mb-6
+          group-hover:scale-110 transition-transform">
+          <svg class="w-6 h-6 text-purple-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10"/>
+          </svg>
+        </div>
+
+        <h3 class="text-xl font-bold text-white mb-4">Docker Support</h3>
+        <p class="text-slate-400 text-sm mb-6">
+          Containerized deployments for consistent environments across stages.
+        </p>
+
+        <ul class="text-[13px] text-slate-300 space-y-3 mb-8">
+          <li class="flex items-center gap-2">
+            <span class="w-1.5 h-1.5 rounded-full bg-purple-400"></span>
+            Docker & Compose
+          </li>
+          <li class="flex items-center gap-2">
+            <span class="w-1.5 h-1.5 rounded-full bg-purple-400"></span>
+            Container Optimization
+          </li>
+        </ul>
+
+        <a href="/docker-containerization.html"
+          class="inline-flex items-center text-purple-400 font-bold text-xs tracking-widest uppercase">
+          Explore Docker →
+        </a>
+      </div>
+
+      <!-- Linux -->
+      <div class="group relative bg-slate-900/40 backdrop-blur-md border border-slate-800/60 rounded-3xl p-8
+        hover:border-emerald-500/50 transition-all duration-300 hover:-translate-y-2
+        hover:shadow-[0_20px_40px_-15px_rgba(16,185,129,0.3)]">
+
+        <div class="w-12 h-12 bg-emerald-500/10 rounded-2xl flex items-center justify-center mb-6
+          group-hover:scale-110 transition-transform">
+          <svg class="w-6 h-6 text-emerald-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="M5 12h14M5 12a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v4M5 12v4a2 2 0 002 2h14a2 2 0 002-2v-4"/>
+          </svg>
+        </div>
+
+        <h3 class="text-xl font-bold text-white mb-4">Linux Automation</h3>
+        <p class="text-slate-400 text-sm mb-6">
+          Automated server management, monitoring, and security hardening.
+        </p>
+
+        <ul class="text-[13px] text-slate-300 space-y-3 mb-8">
+          <li class="flex items-center gap-2">
+            <span class="w-1.5 h-1.5 rounded-full bg-emerald-400"></span>
+            Bash & Shell Scripting
+          </li>
+          <li class="flex items-center gap-2">
+            <span class="w-1.5 h-1.5 rounded-full bg-emerald-400"></span>
+            Security & Hardening
+          </li>
+        </ul>
+
+        <a href="/linux-cloud-automation.html"
+          class="inline-flex items-center text-emerald-400 font-bold text-xs tracking-widest uppercase">
+          Explore Linux →
+        </a>
+      </div>
+
+    </div>
+  </div>
+</section>
     <!-- certificate -->
     <!-- <section id="certifications" class="py-24 relative overflow-hidden bg-slate-950">
     
@@ -835,8 +1010,6 @@
             </div>
         </div>
     </section>
-
-
 
     <!-- Contact Section -->
     <section id="contact" class="py-24 relative overflow-hidden bg-slate-950">
